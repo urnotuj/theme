@@ -1,0 +1,40 @@
+div.post-toc {
+    /* text-align: right; */
+    position: fixed;
+    right: 2%;
+    bottom: 143px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+    max-width: 333px;
+    div.post-toc-btn {
+        /*position: fixed;
+        left: 95%;
+        bottom: 143px;*/
+        cursor: pointer;
+    }
+    div.post-toc-btn:hover {
+        background: #C7DEF5;
+    }
+    .article-toc {
+        border: 1px solid #e5e5e5;
+        background: #fcfcfc;
+        padding: 10px 16px;
+        max-height: 500px;
+        overflow-y: auto;
+        li.article-toc-item {
+            list-style: none;
+            a.article-toc-link {
+                text-decoration: none;
+                color: #555;
+                font-size: 1.2rem;
+            }
+        }
+    }
+}
+@media screen and (max-width: 878px){
+    div.post-toc{
+        display: none;
+    }
+}
