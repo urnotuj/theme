@@ -17,24 +17,34 @@ div.post-toc {
     div.post-toc-btn:hover {
         background: #C7DEF5;
     }
-    .article-toc {
+    ul.article-toc {
         border: 1px solid #e5e5e5;
         background: #fcfcfc;
         padding: 10px 16px;
-        max-height: 500px;
+        max-height: 300px;
         overflow-y: auto;
-        li.article-toc-item {
+        li {
             list-style: none;
-            a.article-toc-link {
+            a {
                 text-decoration: none;
                 color: #555;
-                font-size: 1.2rem;
+                font-size: 1rem;
             }
+            a.headeractive {
+                color: #C7DEF5;
+            }
+        }
+        li.ceng_1 {
+            text-indent: 1.2rem;
+        }
+        li.ceng_2 {
+            text-indent: 1.9rem;
         }
     }
 }
-@media screen and (max-width: 878px){
-    div.post-toc{
+
+@media screen and (max-width: 878px) {
+    div.post-toc {
         display: none;
     }
 }
